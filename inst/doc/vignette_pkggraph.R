@@ -1,13 +1,13 @@
 ## ------------------------------------------------------------------------
 suppressPackageStartupMessages(library("tidyverse"))      # for tidy data manipulations
 suppressPackageStartupMessages(library("magrittr"))       # for friendly piping
+suppressPackageStartupMessages(library("network"))        # for plotting
 suppressPackageStartupMessages(library("sna"))            # for plotting
 suppressPackageStartupMessages(library("statnet.common")) # for plotting
-suppressPackageStartupMessages(library("network"))        # for plotting
 suppressPackageStartupMessages(library("networkD3"))      # for plotting
 suppressPackageStartupMessages(library("igraph"))         # for graph computations
 suppressPackageStartupMessages(library("pkggraph"))       # attach the package
-suppressMessages(init())                                  # initiate the package
+suppressMessages(init(local = TRUE))                      # initiate the package
 
 ## ---- eval = TRUE--------------------------------------------------------
 get_neighborhood("mlr") # a tibble, every row indicates a dependency
