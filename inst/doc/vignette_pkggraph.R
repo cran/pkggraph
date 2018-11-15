@@ -1,5 +1,5 @@
 ## ------------------------------------------------------------------------
-suppressPackageStartupMessages(library("tidyverse"))      # for tidy data manipulations
+suppressPackageStartupMessages(library("dplyr"))          # for tidy data manipulations
 suppressPackageStartupMessages(library("magrittr"))       # for friendly piping
 suppressPackageStartupMessages(library("network"))        # for plotting
 suppressPackageStartupMessages(library("sna"))            # for plotting
